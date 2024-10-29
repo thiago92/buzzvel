@@ -1,0 +1,196 @@
+.background {
+    background-image: url(../../public/images/Section.png);
+    height: 812px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 640px) {
+    .background {
+        background-image: url(../../public/images/Section.png);
+        background-position: top right;
+        background-size: 125%;
+    }
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    gap: 40px;
+    width: 50%;
+}
+
+.navbarBrand a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0F172A;
+    cursor: pointer;
+}
+
+.navbarMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbarMenu ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0F172A;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .navbarMenu {
+        display: none;
+    }
+}
+
+.contact {
+    width: 50%;
+}
+
+.contact ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .contact {
+        display: none;
+    }
+}
+
+.headsetLi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #0369A1;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.information {
+    width: 920px;
+    height: 614px;
+    gap: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.information div {
+    width: 700px;
+}
+
+.information button {
+    margin-top: 30px;
+}
+
+.information button div {
+    width: 20px;
+}
+
+.information img {
+    width: 74px;
+    height: 64px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    .information {
+        margin-top: 300px;
+        width: 100%;
+        gap: 64px;
+    }
+
+    .information div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .information h2, .information p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .comment_profile p {
+        text-align: left;
+        width: 90%;
+    }
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.comment div {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment div span:nth-child(1) {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0F172A;
+}
+
+.comment div span:nth-child(2) {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #475569;
+}
+
+@media (max-width: 640px) {
+    .comment {
+        width: 90% !important;
+        flex-direction: row !important;
+    }
+
+    .comment div {
+        align-items: flex-start;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* efeito de subida */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+

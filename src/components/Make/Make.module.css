@@ -1,0 +1,119 @@
+.background {
+    background-color: #7E22CE;
+    padding: 80px 0;
+    width: 100%;
+    height: 800px;
+    background-image: url(../../public/images/ellipse.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+@media (max-width: 640px) {
+    .background {
+        background-color: #581C87;
+        background-image: url(../../public/images/ellipse2.png);
+        background-position: bottom left;
+        height: 450px;
+    }
+    .responsive { 
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+} 
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .top {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+.title {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title span {
+    color: #FCD34D;
+}
+
+.title h3 {
+    color: #fff;
+}
+
+@media (max-width: 640px) {
+    .title {
+        width: 100%;
+    }
+
+    .title span {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.button {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button p {
+    color: #fff;
+}
+
+@media (max-width: 640px) {
+    .button {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.img img {
+    width: 1008px;
+    height: 555px;
+}
+
+@media (max-width: 640px) {
+    .img {
+        margin-top: 0;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

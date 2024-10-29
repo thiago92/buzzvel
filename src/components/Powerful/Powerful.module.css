@@ -1,0 +1,119 @@
+.background {
+    background-image: url(../../public/images/rectangule2.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    width: 100%;
+    padding: 80px 0;
+    height: 1060px;
+}
+
+@media (max-width: 640px) {
+    .background {
+        background-size: 100%;
+        background-position: bottom left;
+        height: 1325px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .main {
+        display: flex;
+        width: 90%;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.image {
+    width: 40%;
+    display: flex;
+}
+
+@media (max-width: 640px) {
+    .image {
+        display: none;
+    }
+}
+
+.services {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: 640px) {
+    .services {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .services p {
+        text-align: center;
+    }
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .information {
+        margin-top: 100px;
+    }
+}
+
+.information div div {
+    width: 566px;
+    height: 181px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.information div div p {
+    padding: 0 60px 0 0;
+}
+
+@media (max-width: 640px) {
+
+    .information div div {
+        width: 100%;
+        align-items: center !important;
+        gap: 8px;
+        margin-bottom: 80px;
+    }
+
+    .information div div h4 {
+        text-align: center;
+    }
+
+    .information div div p {
+        padding: 0 7.5px 0 7.5px;
+    }
+}
+
+.fadeLeft {
+    opacity: 0;
+    transform: translatex(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fadeLeft.visible {
+    opacity: 1;
+    transform: translatex(0);
+}

@@ -1,0 +1,196 @@
+.background {
+    background-color: #581C87;
+    width: 100%;
+    padding: 80px 0;
+    height: 1020px;
+}
+
+@media (max-width: 640px) {
+    .background {
+        height: 980px;
+    }
+    
+    .responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .main {
+        width: 90%;
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top div:nth-child(1) {
+    width: 70%;
+}
+
+.top div:nth-child(2) {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+    .top {
+        flex-direction: column;
+    }
+
+    .top div:nth-child(1) {
+        width: 100%;
+    }
+
+    .top div:nth-child(2) {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+.main h3, .main p {
+    color: #fff;
+}
+
+.main span {
+    color: #FCD34D;
+}
+
+@media (max-width: 640px) {
+    .main h3, .main p {
+        text-align: center;
+    }
+
+    .main span {
+        margin-left: 22.5%;
+    }
+}
+
+.content {
+    margin-top: 80px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+@media (max-width: 640px) {
+    .content {
+        margin-top: 40px;
+    }
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease; 
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 100%;
+}
+
+.carouselItem {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 364px;
+    height: 442px;
+    padding: 32px;
+    gap: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 0 15px;
+}
+
+.carouselItem:hover {
+    height: 490px !important;
+    padding: 42px;
+    transition: all .3s;
+}
+
+.carouselItem p {
+    color: #000;
+}
+
+@media (max-width: 640px) {
+    .carouselItem {
+        width: 315px;
+        margin: 0 25px;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile div span:nth-child(1) {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0F172A;
+    white-space: nowrap;
+}
+
+.profile div span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    color: #475569;
+    white-space: nowrap;
+}
+
+
+.profile img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    margin-top: 80px;
+}
+
+@media (max-width: 640px) {
+    .arrow {
+        margin-top: 0px;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+.arrow div {
+    cursor: pointer;
+}
